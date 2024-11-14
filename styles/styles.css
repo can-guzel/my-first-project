@@ -1,9 +1,109 @@
 p {
-    color: blue;
+  color: blue;
 }
+
+.login-hr {
+  margin: 15px;
+}
+
 h1 {
-    color: blue;
+  color: blue;
 }
 main h4 {
-    color: orange;
+  color: orange;
+}
+
+.main-title {
+  height: 50px;
+  text-align: center;
+  background-color: black;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.main-title:hover,
+.main-title:active,
+.main-title:focus {
+  color: #fff;
+  background-color: #2a1f62;
+}
+
+.order {
+  border: 3px solid #2a1f62;
+  width: 250px;
+  background-color: #f5f5fa;
+}
+
+.order h3 {
+  align-items: center;
+}
+
+.order-button {
+  align-items: center;
+  background: #f5f5fa;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #2a1f62;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Cascadia Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
+    monospace;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
+}
+
+.order-button:hover {
+  background: #f8f8ff;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+@media (min-width: 768px) {
+  .order-button {
+    padding: 24px;
+  }
+}
+
+.padding-margin-test-box {
+  box-sizing: border-box;
+  width: 150px;
+  padding: 30px;
+  margin: 20px;
+  border: 5px dashed #2a1f62;
+}
+
+.frog-link {
+  color: blue;
+  background-color: bisque;
+}
+.frog-link:hover {
+  color: rgb(47, 255, 0);
+  background-color: bisque;
+  cursor: wait;
+}
+.frog-link:active {
+  color: rgb(255, 21, 0);
+  background-color: bisque;
+  cursor: zoom-in;
+}
+
+main ul,
+footer ul {
+  list-style-type: none;
+}
+
+.taken {
+  text-shadow: 20px 0px #2a1f62;
 }
