@@ -107,3 +107,75 @@ footer ul {
 .taken {
   text-shadow: 20px 0px #2a1f62;
 }
+
+.box-test {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-top: 3px solid blue;
+  border-right: 5px dotted black;
+  border-bottom: 7px dashed palevioletred;
+  border-left: 9px double green;
+}
+.box-test::before,
+.box-test::after {
+  text-align: end;
+  content: 'bu yazı kopyalanamaz';
+}
+
+.scroll-test {
+  width: 30em;
+  height: 20em;
+  margin-left: 15px;
+  background-color: beige;
+  border: 5px dashed red;
+  overflow: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.scroll-test:hover,
+.scroll-test:active,
+.scroll-test:focus {
+  background-color: antiquewhite;
+}
+
+.all-boxes {
+  display: flex;
+  padding: 1em;
+  border: 5px dotted blueviolet;
+  align-items: center;
+}
+
+.outer-box {
+  width: 200px;
+  height: 200px;
+  margin-left: 1em;
+  background-color: teal;
+  border: double 5px black;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: double 5px black;
+  background-color: palevioletred;
+}
+
+.hrs {
+  width: 100px;
+  margin-left: 1em;
+  padding: 20px;
+  border: 5px dotted green;
+  opacity: 50%;
+}
+
+.hrs .hr1 {
+  border-top: 10px solid red;
+}
+.hrs .hr2 {
+  border-top: 10px solid green;
+}
+.hrs .hr3 {
+  border-top: 10px solid blue;
+}
