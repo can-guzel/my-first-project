@@ -3,7 +3,7 @@ p {
 }
 
 .login-hr {
-  margin: 15px;
+  border: 1px dashed black;
 }
 
 h1 {
@@ -14,16 +14,29 @@ main h4 {
 }
 
 .main-title {
+  position: sticky;
+  top: 0;
   height: 50px;
   text-align: center;
   background-color: black;
   text-transform: uppercase;
   margin-top: 0px;
+  transition-property: color, background-color;
+  transition-duration: 200ms;
+  transition-delay: 0;
 }
 .main-title:hover,
 .main-title:active,
 .main-title:focus {
   color: #fff;
+  background-color: #2a1f62;
+}
+
+header {
+  position: fixed;
+  top: 45px;
+  right: 0;
+  padding: 5px;
   background-color: #2a1f62;
 }
 
@@ -204,4 +217,10 @@ footer ul {
 .img-card img {
   display: block;
   max-width: 100%;
+}
+
+.social-accounts {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
